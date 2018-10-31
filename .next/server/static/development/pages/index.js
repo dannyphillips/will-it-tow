@@ -104,20 +104,37 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _button_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./button.css */ "./components/button.css");
+/* harmony import */ var _button_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_button_css__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/dannyphillips/CodeProjects/will-it-tow/components/Button.js";
+
 
 
 var Button = function Button() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: _button_css__WEBPACK_IMPORTED_MODULE_1___default.a.button,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 2
+      lineNumber: 3
     },
     __self: this
   }, "Here is my button");
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Button);
+
+/***/ }),
+
+/***/ "./components/button.css":
+/*!*******************************!*\
+  !*** ./components/button.css ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"button": "_3L4khaMe3UOOGe_ZE6JK3U"
+};
 
 /***/ }),
 
