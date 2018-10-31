@@ -6,12 +6,17 @@
     "build": "next build",
     "start": "next start"
   },
+  "repository": {
+
+  },
+  "license": "MIT",
   "dependencies": {
     "next": "^7.0.2",
     "react": "^16.6.0",
     "react-dom": "^16.6.0"
   },
   "devDependencies": {
+    "now": "^11.4.6",
     "now-env": "^3.0.4"
   }
 }
