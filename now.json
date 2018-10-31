@@ -1,4 +1,7 @@
 {
   "env": {
-  }
+  },
+  "alias": [
+    "will-it-tow"
+  ]
 }

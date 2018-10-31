@@ -1,0 +1,15 @@
+.app {
+  display: flex;
+  padding: 10px;
+  border: 2px solid black;
+  width: 50%;
+  flex-direction: column;
+  margin: 100px auto;
+}
+.title {
+  font-size: 24px;
+}
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+}
