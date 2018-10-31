@@ -1,6 +1,5 @@
 {
   "env": {
-    "SECRET": "@my-secret-key",
-    "ANOTHER_SECRET": "@my-other-secret-key"
+    "SECRET": "@my-secret-key"
   }
 }
