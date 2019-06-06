@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Signin to Git
+          command: |
+            git config --global user.email "danny.phillips8@gmail.com";
+            git config --global user.name "Danny Phillips"
+      - run:
+          name: Setup Dependencies
+          command: npm install
+      - run:
+          name: Build App
+          command: npm run build
+      - run:
+          name: Deploy
+          command: npm run deploy
