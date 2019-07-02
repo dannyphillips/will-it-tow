@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import style from './style.css'
-import { Button, Card } from '../components';
+import { Card } from '../components';
+import ReactSVG from "react-svg";
+
 class App extends Component {
   state = {
     tow_cap: "",
@@ -13,39 +15,46 @@ class App extends Component {
   render() {
     return (
       <div className={style.app}>
-        <div className={style.title}>
-          <Button />
-          Will it Tow?
-        </div>
+        <div className={style.title}>Will it Tow?</div>
         <div className={style.cardContainer}>
-          <Card title={"Tow Vehicle"}>
-            <label>Tow Capacity</label>
-            <input
-              type="number"
-              value={this.state.tow_cap}
-              onChange={evt =>
-                this.setState({
-                  tow_cap: evt.target.value,
-                  trailer_weight: evt.target.value/4
-                })
-              }
-            />
-          </Card>
-          <Card title={"Risk Rating"}>
-            <label>Tow Risk</label>
-            {this.calcRisk()}
-          </Card>
           <Card title={"Trailer"}>
-            <label>Dry / Unloaded Vehicle Weight(UVW)</label>
+            <h2>Dry / Unloaded Vehicle Weight(UVW)</h2>
             <input
               type="number"
+              className={style.entry}
               value={this.state.trailer_weight}
               onChange={evt =>
                 this.setState({
                   trailer_weight: evt.target.value,
-                  tow_cap: evt.target.value/3
+                  tow_cap: evt.target.value / 3
                 })
               }
+            />
+            <ReactSVG
+              src="static/campers/trailer3.svg"
+              className={style.icon}
+            />
+          </Card>
+          <Card title={"Risk Rating"}>
+            <h2>Tow Risk</h2>
+            {this.calcRisk()}
+          </Card>
+          <Card title={"Tow Vehicle"}>
+            <h2>Tow Capacity</h2>
+            <input
+              type="number"
+              className={style.entry}
+              value={this.state.tow_cap}
+              onChange={evt =>
+                this.setState({
+                  tow_cap: evt.target.value,
+                  trailer_weight: evt.target.value / 4
+                })
+              }
+            />
+            <ReactSVG
+              src="static/campers/jeep.svg"
+              className={style.icon}
             />
           </Card>
         </div>

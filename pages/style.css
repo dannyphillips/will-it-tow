@@ -2,14 +2,23 @@
   display: flex;
   padding: 10px;
   border: 2px solid black;
-  width: 50%;
+  width: 80%;
   flex-direction: column;
   margin: 100px auto;
 }
 .title {
-  font-size: 24px;
+  font-size: 48px;
+  font-weight: bold;
 }
 .cardContainer {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+}
+.icon {
+  width: 400px;
+}
+.entry {
+  height: 24px;
+  width: 200px;
 }
