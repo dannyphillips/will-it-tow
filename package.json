@@ -5,7 +5,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "deploy": "now --public"
+    "deploy": "now"
   },
   "repository": "https: //github.com/dannyphillips/will-it-tow.git",
   "license": "MIT",
