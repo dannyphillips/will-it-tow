@@ -16,7 +16,7 @@
     "next": "8.1.0",
     "react": "16.9.0",
     "react-dom": "16.9.0",
-    "react-svg": "^10.0.16"
+    "react-svg": "^10.0.17"
   },
   "devDependencies": {
     "now": "^15.8.7"
