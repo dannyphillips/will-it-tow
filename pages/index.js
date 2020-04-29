@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import style from "./style.css";
 import { Card } from "../components";
-import ReactSVG from "react-svg";
+import { ReactSVG } from "react-svg";
 
 class App extends Component {
   state = {
