@@ -19,6 +19,6 @@
     "react-svg": "^11.0.21"
   },
   "devDependencies": {
-    "now": "^18.0.0"
+    "now": "^19.0.0"
   }
 }
