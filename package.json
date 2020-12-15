@@ -6,7 +6,7 @@
     "build": "next build",
     "now-build": "next build && next export -o dist",
     "start": "next start",
-    "deploy": "now"
+    "deploy": "vercel"
   },
   "repository": "https: //github.com/dannyphillips/will-it-tow.git",
   "license": "MIT",
@@ -16,9 +16,9 @@
     "next": "^10.0.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-svg": "^11.1.4"
+    "react-svg": "^11.1.4",
   },
   "devDependencies": {
-    "now": "^21.0.1"
+    "vercel": "^21.0.1"
   }
 }
