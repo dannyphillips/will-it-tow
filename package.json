@@ -16,7 +16,7 @@
     "next": "^10.0.8",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-svg": "^11.2.4"
+    "react-svg": "^12.1.0"
   },
   "devDependencies": {
     "vercel": "^21.3.2"
