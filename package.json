@@ -19,6 +19,6 @@
     "react-svg": "^14.0.15"
   },
   "devDependencies": {
-    "vercel": "^23.1.2"
+    "vercel": "^28.2.4"
   }
 }
