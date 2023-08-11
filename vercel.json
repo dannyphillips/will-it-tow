@@ -1,6 +1,6 @@
 {
   "version": 2,
   "name": "will-it-tow",
-  "builds": [{ "src": "package.json", "use": "@now/static-build" }],
+  "builds": [{ "src": "package.json", "use": "@vercel/static-build" }],
   "alias": ["will-it-tow"]
 }
