@@ -2,10 +2,8 @@
   "name": "will-it-tow",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "now-build": "next build && next export -o dist",
-    "start": "next start",
+    "dev": "vercel",
+    "build": "vercel build && next export -o dist",
     "deploy": "vercel"
   },
   "repository": "https: //github.com/dannyphillips/will-it-tow.git",
