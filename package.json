@@ -2,9 +2,9 @@
   "name": "will-it-tow",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vercel",
-    "build": "vercel build && next export -o dist",
-    "deploy": "vercel"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "repository": "https: //github.com/dannyphillips/will-it-tow.git",
   "license": "MIT",
