@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-const TowingCalculator = () => {
+export default function TowingCalculator() {
   const [trailerWeight, setTrailerWeight] = useState("");
   const [towVehicleCapacity, setTowVehicleCapacity] = useState("");
   const [payloadCapacity, setPayloadCapacity] = useState("");
@@ -119,5 +119,3 @@ const TowingCalculator = () => {
     </div>
   );
 };
-
-export default TowingCalculator;
