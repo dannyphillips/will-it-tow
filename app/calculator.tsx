@@ -1,6 +1,6 @@
 "use client"; // 👈 use it here
 
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 
 export default function TowingCalculator() {
   const [trailerWeight, setTrailerWeight] = useState("");
@@ -8,6 +8,7 @@ export default function TowingCalculator() {
   const [payloadCapacity, setPayloadCapacity] = useState("");
   const [tongueWeight, setTongueWeight] = useState("");
   const [result, setResult] = useState("");
+  const [error, setError] = useState(false);
 
   const handleCalculate = () => {
     const trailerWeightNum = parseFloat(trailerWeight);
@@ -21,13 +22,16 @@ export default function TowingCalculator() {
       isNaN(payloadCapacityNum) ||
       isNaN(tongueWeightNum)
     ) {
+      setError(true);
       setResult("Please enter valid numbers");
     } else if (
       trailerWeightNum > towVehicleCapacityNum ||
       tongueWeightNum > payloadCapacityNum
     ) {
+      setError(true);
       setResult("Trailer cannot be towed");
     } else {
+      setError(false);
       setResult("Trailer can be towed");
     }
   };
@@ -114,7 +118,11 @@ export default function TowingCalculator() {
           </button>
         </div>
 
-        <div className="text-xl mt-6 text-red-500 font-bold">{result}</div>
+        <div
+          className={`text-xl mt-6 ${error ? "text-red-500" : "text-green-500"} font-bold`}
+        >
+          {result}
+        </div>
       </div>
     </div>
   );
