@@ -1,10 +1,14 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { familySessionFromRequest, verifyFamilySession } from "./lib/family-session";
+import { isPublicPwaPath } from "./lib/pwa-public-paths";
 
 const AUTH_URL = (process.env.AUTH_URL || "https://auth.thephillips.family").replace(/\/$/, "");
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  if (isPublicPwaPath(pathname)) {
+    return NextResponse.next();
+  }
   if (pathname === "/health" || pathname === "/robots.txt") {
     if (pathname === "/health") {
       return NextResponse.json({ ok: true, service: "tow" });
